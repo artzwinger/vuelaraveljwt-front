@@ -12,8 +12,10 @@
     "@formkit/icons": "^0.16.5",
     "@formkit/themes": "^0.16.5",
     "@formkit/vue": "^0.16.5",
+    "axios": "^1.3.6",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

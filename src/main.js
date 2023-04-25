@@ -8,10 +8,12 @@ import {generateClasses} from "@formkit/themes";
 import { ru } from '@formkit/i18n'
 import { genesisIcons } from '@formkit/icons'
 import genesis from '@formkit/themes/tailwindcss/genesis'
+import {authStore} from "@/store/auth";
 
 const app = createApp(App)
 
 app.use(router)
+app.use(authStore)
 app.use(plugin,
     defaultConfig({
         locales: [ru],
