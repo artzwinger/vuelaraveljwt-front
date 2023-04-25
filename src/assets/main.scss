@@ -13,3 +13,7 @@
 .router-page {
   @apply flex flex-col h-screen items-center justify-center gap-5;
 }
+
+.button {
+  @apply bg-sky-800 text-white px-5 py-2 inline-block;
+}

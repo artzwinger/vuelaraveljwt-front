@@ -43,8 +43,8 @@ export default {
 
 <template>
   <div class="profile-page">
-    <div v-if="this.profile">
-      Привет, {{ profile.first_name }}
+    <div class="profile" v-if="this.profile">
+      <span>Привет, {{ profile.first_name }}</span>
       <div class="button" @click="this.logOut">
         Выйти
       </div>
@@ -52,12 +52,15 @@ export default {
     <div v-if="this.profile === null">
       Загрузка...
     </div>
-    {{ this.profile }}
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .profile-page {
   @apply flex flex-col;
+
+  .profile {
+    @apply flex flex-col gap-2 cursor-pointer pointer-events-none;
+  }
 }
 </style>
