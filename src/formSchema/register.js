@@ -25,7 +25,7 @@ export const registerFormSchema = [
     },
     {
         $formkit: 'password',
-        name: 'password_confirm',
+        name: 'password_confirmation',
         label: 'Повторите пароль',
         validation: 'required|confirm',
     },

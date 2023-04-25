@@ -1,14 +1,16 @@
-const formKitTailwind = require('@formkit/themes/tailwindcss');
+const FormKitVariants = require("@formkit/themes/tailwindcss");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    formKitTailwind
-  ],
+    content: [
+        './src/**/*.{html,js,vue}',
+        './node_modules/@formkit/themes/dist/tailwindcss/genesis/index.cjs',
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [
+        FormKitVariants
+    ],
 }
 
